@@ -1,0 +1,146 @@
+$head-height:100px;
+$head-color:#09BB07;
+$container-color:#ccc;
+$font-color-white:white;
+$font-size-small:12px;
+$font-size-normal:18px;
+$font-size-big:24px;
+html {
+    font-size:12px;
+}
+header{
+    width:100%;
+}
+
+.top-title{
+    width:50%;
+    float:left;
+    line-height: $head-height;
+    font-size:30px;
+    color:$font-color-white;
+}
+.nav-collapse{
+    width:50%;
+    float:right;
+    .top-menu{
+        
+    }
+    
+    
+}
+
+#nav-wrapper{
+    background-color:$head-color;
+    box-shadow: 0 0 20px #000;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 100000;
+    #navbar-menu{
+            background-color:$head-color;
+            border:none;
+            width:100%;
+            float:right;
+            line-height: $head-height;
+            display:table-cell;
+            vertical-align:middle;
+    }
+    .white{
+        color:white;
+    }
+    .big{
+        font-size:$font-size-big;
+    }
+    #target-menu{
+        li{
+            a{
+                color:white;
+            }
+        }
+    }
+}
+
+#main-container{
+    margin-top:100px;
+    .container{
+        padding-top:40px;
+        background-color:$container-color;
+        #desc{
+            p{
+                text-indent:2rem;
+                font-size:14px;
+            }
+        }
+        hr{
+                border: 3px solid #fff;
+        }
+        #photo{
+            text-align:center;
+            img{
+                border-radius:50%;
+                width:240px;
+            }
+        
+        }
+        #mini-button{
+        span{
+            font-size:16px;
+            margin-right:5px;
+        }
+        }
+    }
+    #second{
+    padding:16px;
+    background-color:#ddd;
+    img{
+        max-height:250px;
+        max-width:250px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .miniTitle{
+        font-size:18px;
+        font-family:"Open Sans";
+    }
+    hr{
+                border: 3px solid #000;
+                width:80%;
+        }
+    }
+    #Third{
+    height:300px;
+        hr{
+                border: 3px solid #000;
+                width:80%;
+        }
+        li{
+                float:left;
+                margin-left:40px;
+                list-style:none;
+                width:32px;
+                height:32px;
+                border-radius:16px;
+                text-align: center;
+        }
+        #left-tab{
+            padding:0 30px;
+        }
+    }
+}
+#footer{
+    height:120px;
+    background-color:#000;
+    .footer-center{
+        margin-top:30px;
+        line-height:30px;
+        vertical-align:center;
+        p{
+            color:#fff;
+        }
+    }
+}
+
