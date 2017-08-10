@@ -6,7 +6,7 @@
     <link href="dist/bootstrap.min.css" rel="stylesheet"> 
     <link href="dist/main.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#target-menu">
 <div id="nav-wrapper">
     <header>
         <div class="container">
@@ -30,10 +30,9 @@
                </div>
                <div class="collapse navbar-collapse" id = "target-menu">  
                    <ul class="nav navbar-nav navbar-right white">  
-                        <li><a href="#">Menu1</a></li>  
-                        <li><a href="#">Menu2</a></li>  
-                        <li><a href="#">Menu3</a></li>  
-                        <li><a href="#">Menu4</a></li> 
+                        <li><a href="#about">Syntax</a></li>  
+                        <li><a href="#second">Second</a></li>  
+                        <li><a href="#third">Contact</a></li>   
                    </ul>
                </div>
            </nav>
@@ -47,7 +46,7 @@
         <div class="container">
             <div class="row" id = "about">
                 <div id = "desc" class = "col-md-8 col-sm-12 col-xs-12">
-                    <h3>语法格式 (Syntax)</h3>
+                    <h3>语法格式 ( Syntax )</h3>
                     <p>Sass 有两种语法格式。首先是 <b>SCSS (Sassy CSS)</b> —— 也是本文示例所使用的格式 —— 这种格式仅在 CSS3 语法的基础上进行拓展，所有 CSS3 语法在 SCSS 中都是通用的，同时加入 Sass 的特色功能。此外，SCSS 也支持大多数 CSS hacks 写法以及浏览器前缀写法 (vendor-specific syntax)，以及早期的 IE 滤镜写法。这种格式以 .scss 作为拓展名。</p>
                     <p>另一种也是最早的 Sass 语法格式，被称为缩进格式 (Indented Sass) 通常简称 "Sass"，是一种简化格式。它使用 “缩进” 代替 “花括号” 表示属性属于某个选择器，用 “换行” 代替 “分号” 分隔属性，很多人认为这样做比 SCSS 更容易阅读，书写也更快速。缩进格式也可以使用 Sass 的全部功能，只是与 SCSS 相比个别地方采取了不同的表达方式，具体请查看 the indented syntax reference。这种格式以 .sass 作为拓展名。</p>
                     <hr>
@@ -109,7 +108,7 @@
     </div>
     <div class="row">
         <div class="container">
-            <div class="row" id = "Third">
+            <div class="row" id = "third">
                 <h2 class="text-center">Contact Us</h2>
                 <hr>
                 <div class="row">
@@ -142,5 +141,8 @@
 
     <script type="text/javascript" src="dist/jquery.min.js"></script> 
     <script type="text/javascript" src="dist/bootstrap.min.js"></script>
+    <script>
+    $('body').scrollspy({ target: '#target-menu' })
+    </script>
 </body>
 </html>
